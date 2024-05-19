@@ -1,0 +1,118 @@
+/* src/styles.css */
+body {
+    font-family: 'Roboto', sans-serif; /* Changed font family */
+    background-color: #f0f0f0; /* Changed background color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px; /* Changed max-width */
+    margin: 0 auto;
+    padding: 40px; /* Increased padding */
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem; /* Increased font size */
+    margin-bottom: 40px; /* Increased margin */
+    color: #ff5722; /* Changed color */
+}
+
+.course-builder {
+    background-color: #fff;
+    border-radius: 12px; /* Increased border radius */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+    padding: 30px; /* Increased padding */
+}
+
+.module {
+    background-color: #e0e0e0; /* Changed background color */
+    border: 2px solid #888; /* Changed border */
+    border-radius: 10px; /* Changed border radius */
+    margin-bottom: 30px; /* Increased margin */
+    padding: 20px; /* Increased padding */
+    transition: transform 0.3s ease-in-out; /* Adjusted transition */
+}
+
+.module:hover {
+    transform: scale(1.05); /* Adjusted hover effect */
+}
+
+.module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.module-title {
+    font-size: 1.4rem; /* Increased font size */
+    margin: 0;
+    color: #222; /* Changed color */
+}
+
+.module-actions {
+    display: flex;
+    gap: 15px; /* Increased gap */
+}
+
+.module-actions button {
+    border: none;
+    background-color: #ff5722; /* Changed button color */
+    color: #fff; /* Changed text color */
+    padding: 10px 20px; /* Increased padding */
+    border-radius: 6px; /* Changed border radius */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.module-actions button:hover {
+    background-color: #e64a19; /* Adjusted hover color */
+    transform: translateY(-3px); /* Adjusted hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjusted hover effect */
+}
+
+.resource {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0; /* Increased padding */
+}
+
+.resource-actions button {
+    border: none;
+    background-color: #2196f3; /* Changed button color */
+    color: #fff; /* Changed text color */
+    padding: 8px 16px; /* Increased padding */
+    border-radius: 4px; /* Changed border radius */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.resource-actions button:hover {
+    background-color: #1565c0; /* Adjusted hover color */
+    transform: translateY(-2px); /* Adjusted hover effect */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Adjusted hover effect */
+}
+
+/* Background animation */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #00bcd4, #4caf50); /* Changed gradient */
+    z-index: -1;
+    animation: moveBackground 25s linear infinite alternate;
+}
+
+@keyframes moveBackground {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(10%);
+    }
+}
